@@ -7,7 +7,7 @@ __pycache__/
 dist/
 build/
 develop/
-
+models/__pycache__/
 # Various
 *.egg-info/
 .eggs/
