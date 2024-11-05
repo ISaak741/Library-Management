@@ -1,0 +1,16 @@
+<odoo>
+    <menuitem
+            id="library_management"
+            name="Library Management"
+    />
+    <menuitem
+            id="books"
+            name="Books"
+            parent="library_management"
+    />
+    <menuitem
+            id="students"
+            name="Student"
+            parent="library_management"
+    />
+</odoo>
