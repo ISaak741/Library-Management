@@ -11,6 +11,7 @@
         'views/index.xml',
         'views/students.xml',
         'views/books.xml',
+        'views/borrowed_books.xml',
     ],
     'application' : True
 }
