@@ -13,4 +13,9 @@
             name="Student"
             parent="library_management"
     />
+    <menuitem
+            id="borrowed_books"
+            name="Borrowed Books"
+            parent="library_management"
+    />
 </odoo>

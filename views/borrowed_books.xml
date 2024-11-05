@@ -1,0 +1,48 @@
+<odoo>
+    <record id="borrowed_books_action" model="ir.actions.act_window">
+        <field name="name">Borrowed Books action</field>
+        <field name="res_model">borrowed_books</field>
+    </record>
+    
+    <menuitem 
+        id="borrowed_book_managment" 
+        name="Borrowed Book Managment" 
+        parent="borrowed_books" 
+        action="borrowed_books_action"
+    />
+
+    <record id="borrow_book_view_form" model="ir.ui.view">
+        <field name="name">borrowed book form</field>
+        <field name="model">borrowed_books</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="student_id"/>
+                        <field name="book_id"/>
+                        <field name="borrow_date"/>
+                        <field name="return_date"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="borrowed_book_view_tree" model="ir.ui.view">
+        <field name="name">Borrowed Books List</field>
+        <field name="model">borrowed_books</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="student_id"/>
+                <field name="book_id"/>
+                <field name="borrow_date"/>
+                <field name="return_date"/>
+                <field name="actual_return_date"/>
+                <field name="late_indicator"/>
+                <field name="is_returned" invisible="True"></field>
+                <button name="mark_as_returned" type="object" string="Mark as Returned" invisible="is_returned == True"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>
