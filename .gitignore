@@ -1,0 +1,35 @@
+# Byte-compiled / Python files
+__pycache__/
+*.pyc
+*.pyo
+
+# Distribution / packaging
+dist/
+build/
+develop/
+
+# Various
+*.egg-info/
+.eggs/
+
+# Zip files
+*.zip
+
+# IPython Notebook files
+*.ipynb
+
+# Logs and temporary files
+logs/
+local.xml
+
+# Test results
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Virtualenv
+venv/
+env/
+
+# Editor-specific
+.vscode/
